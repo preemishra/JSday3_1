@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<h2> 
+		<u>Scope of variables</u>
+    </h2> 
+    
+    <script> 
+        /*
+var variables can be updated and re declared
+let variables can be updated but not re declared
+const variables can neither be updated nor re declared
+*/    
+        //var properties
+        var a=100; //global scope
+        console.log(a);
+
+        {
+            var b=67;
+        }
+        console.log(b);//var can be accessed outside the block also.
+
+        var x=10; 
+        console.log(x);
+
+        {
+            var x=99;
+            console.log(x);
+        }
+        console.log(x);//it will give output as 99.....coz var can be redeclared.
+
+        var name="Priti"; 
+        console.log(window.name);//var is a window object
+
+        //let properties
+        let p=22;  //global scope
+        console.log(p); 
+
+        /**
+        {
+            let q=12;
+        }
+        console.log(q);//let can not be accessed outside the block.
+        **/
+
+        let r=89; 
+        console.log(r);
+
+        {
+            let r=600;
+            console.log(r);
+        }
+        console.log(r);//it will give output as 89.....coz let can not be redeclared.
+
+        /**
+        let nm="Kriti"; 
+        console.log(window.nm);//let is not a window object
+        **/
+
+
+        //const properties
+        const c=55;  //global scope
+        console.log(c); 
+        /**
+        {
+            let d=12;
+        }
+        console.log(d);//const can not be accessed outside the block.
+        **/
+
+        const num=500; 
+        console.log(num);
+
+        {
+            const num=600;
+            console.log(num);
+        }
+        console.log(num);//it will give output as 500 only.....coz const can not be redeclared.
+
+        /**
+        const myname="Kriti"; 
+        console.log(window.myname);//const is not a window object
+        **/
+
+    </script> 
+</head> 
+<body> 
+    <p>...........Hey Preeti........<br>.............This is different types of variables.........</p>
+</body> 
+<html>

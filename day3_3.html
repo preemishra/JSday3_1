@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<h2> 
+		<u>DataTypes in JS</u>
+    </h2> 
+
+    <p id="demo0"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>    
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>    
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+
+    <script>
+    //case 0    :   string
+    var x = "Priti " + "Mishra";   
+    document.getElementById("demo0").innerHTML = x;
+
+    //case 1    :   Int + String = String
+    var x = 19 + "Priti";
+    document.getElementById("demo1").innerHTML = x;
+    
+    //case 2    :   String + Int = String
+    var x = "Priti" + 20;
+    document.getElementById("demo2").innerHTML = x;
+
+    //case 3    :   integer
+    var num = 5 + 20;     
+    document.getElementById("demo3").innerHTML = num;
+
+    //case 4    :   float
+    var num = 5.5 + 20;
+    document.getElementById("demo4").innerHTML = num;
+
+    //case 5    :   boolean
+    var x = 10;
+    var y = 10;
+    var z = 20;         
+    document.getElementById("demo5").innerHTML = (x==y);
+    document.getElementById("demo6").innerHTML = (x==z);
+
+    //case 6:   :   array
+    var arr = [1, 2, 3, 4, 5];
+    document.getElementById("demo7").innerHTML = arr[0];
+    console.log(arr);
+
+    //case 7    :   undefined
+    var undef;
+    document.getElementById("demo8").innerHTML = undef;
+
+    //case 8    :   null
+    var str = "";
+    document.getElementById("demo9").innerHTML = "This is null string : " + str;
+
+    //case 9    :   null object
+    var myprofile = {firstName:"Priti", lastName:"Mishra", age:20};
+    myprofile = null;
+    console.log(myprofile);
+
+    //case 10    :   undefined object
+    var myprofile = {firstName:"Priti", lastName:"Mishra", age:20};
+    console.log(myprofile);
+    myprofile = undefined;
+    console.log(myprofile);
+
+    //case 11   :   typeof example
+    var mynum = 100;
+    document.getElementById("demo10").innerHTML = typeof mynum;
+
+    </script>
+
+</head> 
+<body> 
+    <p>this demo page showing datatypes in JS</p>
+</body> 
+<html>
